@@ -1,0 +1,70 @@
+# Light mode, dimmed: background ~L69 (surface_dim darkened+desaturated) instead of ~L98.
+# Text colors darkened (15 or 20) to stay readable on it. Raise/lower the darken values together.
+[colors.primary]
+background = '{{colors.surface_dim.light.hex | darken: 20.0 | desaturate: 20.0}}'
+foreground = '{{colors.terminal_foreground.light.hex}}'
+
+[colors.cursor]
+text = '{{colors.terminal_cursor_text.light.hex}}'
+cursor = '{{colors.terminal_cursor.light.hex}}'
+
+[colors.vi_mode_cursor]
+text = '{{colors.background.light.hex}}'
+cursor = '{{colors.primary.light.hex}}'
+
+[colors.search.matches]
+foreground = '{{colors.surface_variant.light.hex}}'
+background = '{{colors.tertiary.light.hex}}'
+
+[colors.search.focused_match]
+foreground = '{{colors.surface_variant.light.hex}}'
+background = '{{colors.primary.light.hex}}'
+
+[colors.footer_bar]
+foreground = '{{colors.surface_variant.light.hex}}'
+background = '{{colors.inverse_surface.light.hex}}'
+
+[colors.hints.start]
+foreground = '{{colors.surface_variant.light.hex}}'
+background = '{{colors.secondary.light.hex}}'
+
+[colors.hints.end]
+foreground = '{{colors.surface_variant.light.hex}}'
+background = '{{colors.secondary.light.hex}}'
+
+[colors.selection]
+text = '{{colors.terminal_selection_fg.light.hex | darken: 15.0}}'
+background = '{{colors.terminal_selection_bg.light.hex}}'
+
+
+[colors.normal]
+black   = '{{colors.terminal_normal_black.light.hex}}'
+red     = '{{colors.terminal_normal_red.light.hex | darken: 15.0}}'
+green   = '{{colors.terminal_normal_green.light.hex | darken: 15.0}}'
+yellow  = '{{colors.terminal_normal_yellow.light.hex | darken: 15.0}}'
+blue    = '{{colors.terminal_normal_blue.light.hex | darken: 15.0}}'
+magenta = '{{colors.terminal_normal_magenta.light.hex | darken: 20.0}}'
+cyan    = '{{colors.terminal_normal_cyan.light.hex | darken: 20.0}}'
+white   = '{{colors.terminal_normal_white.light.hex}}'
+
+
+[colors.bright]
+black   = '{{colors.terminal_bright_black.light.hex | darken: 20.0}}'
+red     = '{{colors.terminal_bright_red.light.hex | darken: 15.0}}'
+green   = '{{colors.terminal_bright_green.light.hex | darken: 15.0}}'
+yellow  = '{{colors.terminal_bright_yellow.light.hex | darken: 15.0}}'
+blue    = '{{colors.terminal_bright_blue.light.hex | darken: 15.0}}'
+magenta = '{{colors.terminal_bright_magenta.light.hex | darken: 20.0}}'
+cyan    = '{{colors.terminal_bright_cyan.light.hex | darken: 20.0}}'
+white   = '{{colors.terminal_bright_white.light.hex}}'
+
+
+[colors.dim]
+black   = '{{colors.terminal_normal_black.light.hex}}'
+red     = '{{colors.terminal_normal_red.light.hex | darken: 15.0}}'
+green   = '{{colors.terminal_normal_green.light.hex | darken: 15.0}}'
+yellow  = '{{colors.terminal_normal_yellow.light.hex | darken: 15.0}}'
+blue    = '{{colors.terminal_normal_blue.light.hex | darken: 15.0}}'
+magenta = '{{colors.terminal_normal_magenta.light.hex | darken: 20.0}}'
+cyan    = '{{colors.terminal_normal_cyan.light.hex | darken: 20.0}}'
+white   = '{{colors.terminal_normal_white.light.hex}}'

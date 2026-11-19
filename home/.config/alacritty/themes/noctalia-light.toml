@@ -1,0 +1,70 @@
+# Light mode, dimmed: background ~L69 (surface_dim darkened+desaturated) instead of ~L98.
+# Text colors darkened (15 or 20) to stay readable on it. Raise/lower the darken values together.
+[colors.primary]
+background = '#c79a91'
+foreground = '#271815'
+
+[colors.cursor]
+text = '#fff8f6'
+cursor = '#271815'
+
+[colors.vi_mode_cursor]
+text = '#fff8f6'
+cursor = '#8f437d'
+
+[colors.search.matches]
+foreground = '#ffdad3'
+background = '#904b3c'
+
+[colors.search.focused_match]
+foreground = '#ffdad3'
+background = '#8f437d'
+
+[colors.footer_bar]
+foreground = '#ffdad3'
+background = '#3d2c29'
+
+[colors.hints.start]
+foreground = '#ffdad3'
+background = '#834c74'
+
+[colors.hints.end]
+foreground = '#ffdad3'
+background = '#834c74'
+
+[colors.selection]
+text = '#2e1f1c'
+background = '#ffdad3'
+
+
+[colors.normal]
+black   = '#ffdad3'
+red     = '#771111'
+green   = '#5b2b4f'
+yellow  = '#533049'
+blue    = '#5a2f26'
+magenta = '#623656'
+cyan    = '#5d3952'
+white   = '#271815'
+
+
+[colors.bright]
+black   = '#56423d'
+red     = '#771111'
+green   = '#5b2b4f'
+yellow  = '#533049'
+blue    = '#5a2f26'
+magenta = '#623656'
+cyan    = '#5d3952'
+white   = '#271815'
+
+
+[colors.dim]
+black   = '#ffdad3'
+red     = '#771111'
+green   = '#5b2b4f'
+yellow  = '#533049'
+blue    = '#5a2f26'
+magenta = '#623656'
+cyan    = '#5d3952'
+white   = '#271815'

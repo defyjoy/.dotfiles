@@ -1,0 +1,8 @@
+alacritty-themes
+bibata-cursor-theme-bin
+breezex-cursor-theme
+devin-desktop
+kubectl-bin
+lima-bin
+oreo-cursors-bin
+zen

@@ -1,0 +1,28 @@
+[shell]
+polkit_agent = true
+
+# Full 16-colour Pywalfox palette (the community template leaves 9 slots empty).
+[theme.templates.user.pywalfox]
+input_path = "/home/defyjoy/.config/noctalia/templates/pywalfox.json"
+output_path = "/home/defyjoy/.cache/wal/colors.json"
+# Pushes colors and Noctalia's light/dark mode, so Firefox (and websites) follow the desktop's auto mode.
+post_action = "firefox-theme"
+
+# Niri focus ring / tab / hint colors from the active palette.
+[theme.templates.user.niri-colors]
+input_path = "/home/defyjoy/.config/noctalia/templates/niri-colors.kdl"
+output_path = "/home/defyjoy/.config/niri/cfg/colors.kdl"
+
+# Alacritty colors (replaces the builtin alacritty template, whose apply.sh mangled alacritty.toml).
+# noctalia-wallpaper.toml imports noctalia-{light,dark}.toml by mode; light is dimmed (see alacritty-light.toml).
+[theme.templates.user.alacritty-colors]
+input_path = "/home/defyjoy/.config/noctalia/templates/alacritty-colors.toml"
+output_path = "/home/defyjoy/.config/alacritty/themes/noctalia-wallpaper.toml"
+
+[theme.templates.user.alacritty-light]
+input_path = "/home/defyjoy/.config/noctalia/templates/alacritty-light.toml"
+output_path = "/home/defyjoy/.config/alacritty/themes/noctalia-light.toml"
+
+[theme.templates.user.alacritty-dark]
+input_path = "/home/defyjoy/.config/noctalia/templates/alacritty-dark.toml"
+output_path = "/home/defyjoy/.config/alacritty/themes/noctalia-dark.toml"

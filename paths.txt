@@ -1,0 +1,27 @@
+# Paths relative to $HOME that are captured by sync.sh and restored by install.sh.
+# Directories are copied recursively; *.bak, backups and caches are excluded (see EXCLUDES in lib.sh).
+.config/niri/config.kdl
+.config/niri/cfg/
+.config/noctalia/config.toml
+.config/noctalia/templates/
+.local/state/noctalia/settings.toml
+.config/alacritty/
+.config/fish/config.fish
+.config/fish/functions/
+.config/starship.toml
+.config/bat/
+.config/btop/
+.config/fastfetch/
+.config/micro/settings.json
+.config/micro/bindings.json
+.config/micro/colorschemes/
+.config/gtk-3.0/gtk.css
+.config/gtk-3.0/noctalia.css
+.config/gtk-3.0/bookmarks
+.config/gtk-4.0/
+.config/qt5ct/
+.config/qt6ct/
+.config/solaar/config.yaml
+.config/pywalfox/config.json
+.config/mimeapps.list
+.icons/default/index.theme

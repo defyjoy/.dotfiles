@@ -1,0 +1,15 @@
+/* Translucent start page: the wallpaper (blurred by niri) shows behind it.
+   Needs browser.tabs.allow_transparent_browser (user.js) and the backdrop rule in
+   userChrome.css. Cards and widgets keep their own (theme) backgrounds. */
+@-moz-document url("about:newtab"), url("about:home") {
+  :root {
+    --newtab-page-opacity: 45%; /* lower = more see-through */
+  }
+  html,
+  #root {
+    background: transparent !important;
+  }
+  body {
+    background: color-mix(in srgb, var(--newtab-background-color) var(--newtab-page-opacity), transparent) !important;
+  }
+}

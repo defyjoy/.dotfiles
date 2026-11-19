@@ -1,0 +1,82 @@
+/* Translucent toolbar + vertical-tabs sidebar; web page content stays opaque.
+   Colors come from the active (Pywalfox) theme, so they still follow the wallpaper.
+   Niri blurs what shows through (see ~/.config/niri/cfg/rules.kdl).
+   Written against Firefox 158: <body> paints the frame color behind toolbars,
+   sidebar and the gaps around the page; toolbars paint their own color on top. */
+
+:root {
+  --chrome-opacity: 35%; /* lower = more see-through */
+}
+
+/* Window root must be clear for anything to show through (CSD titlebar mode). */
+:root {
+  background-color: transparent !important;
+}
+
+/* The single tinted layer: covers the top bar, the tab strip in the sidebar and
+   the gaps around the page. */
+body,
+body:-moz-window-inactive {
+  background-color: color-mix(in srgb, var(--toolbox-background-color) var(--chrome-opacity), transparent) !important;
+  background-image: none !important;
+}
+
+/* Stop the toolbars repainting an opaque color over that tint. */
+#navigator-toolbox,
+#titlebar,
+.browser-toolbar,
+.browser-toolbar:not(.browser-titlebar) {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+#navigator-toolbox {
+  border-bottom-color: transparent !important;
+}
+
+/* Sidebar panels (bookmarks, history, ...) next to the tab strip. */
+#sidebar-box,
+#sidebar {
+  background-color: color-mix(in srgb, var(--sidebar-background-color) var(--chrome-opacity), transparent) !important;
+}
+
+/* Address/search field: translucent (niri blur shows through), contrast follows the
+   theme mode Noctalia pushes. Dark theme ([lwtheme-brighttext]): dark wallpaper tint +
+   bright text. Light theme: light tint + dark text.
+   :root !important beats the theme's inline variables. */
+:root {
+  --field-opacity: 55%; /* translucency of the field; lower = more see-through */
+  --toolbar-field-background-color: color-mix(in srgb, var(--field-tint) var(--field-opacity), transparent) !important;
+  --toolbar-field-background-color-focus: color-mix(in srgb, var(--field-tint) calc(var(--field-opacity) + 15%), transparent) !important;
+  --toolbar-field-text-color: var(--field-text) !important;
+  --toolbar-field-text-color-focus: var(--field-text-focus) !important;
+  --toolbar-field-border-color: transparent !important;
+}
+:root[lwtheme-brighttext] {
+  --field-tint: color-mix(in srgb, var(--lwt-accent-color, #333) 80%, black);
+  --field-text: color-mix(in srgb, white 94%, var(--lwt-accent-color, #888));
+  --field-text-focus: white;
+}
+:root:not([lwtheme-brighttext]) {
+  --field-tint: color-mix(in srgb, var(--lwt-accent-color, #ccc) 30%, white);
+  --field-text: color-mix(in srgb, var(--toolbar-text-color, #222) 60%, black);
+  --field-text-focus: black;
+}
+:root[lwtheme-brighttext] :is(#urlbar, #searchbar) {
+  color-scheme: dark !important; /* light icons/placeholder on the dark field */
+}
+:root:not([lwtheme-brighttext]) :is(#urlbar, #searchbar) {
+  color-scheme: light !important;
+}
+
+/* Content area backdrop. browser.tabs.allow_transparent_browser makes every tab's
+   content able to be transparent, so normal pages get a white backdrop (the same as
+   Firefox's default page canvas) and only the start page (about:newtab/home, which
+   runs in the "privilegedabout" process) gets a clear one so the blur shows through. */
+.browserContainer:has(browser:is([remoteType^="web"], [remoteType="file"], [remoteType="extension"], [remoteType^="privilegedmozilla"])) {
+  background: #fff !important;
+}
+/* The window's first tab is built into browser.xhtml without a remoteType attribute. */
+.browserContainer:has(browser:is([remoteType="privilegedabout"], :not([remoteType]))),
+.browserStack:has(> browser:is([remoteType="privilegedabout"], :not([remoteType]))) {
+  background: transparent !important;
+}

@@ -1,0 +1,69 @@
+# Dark mode: stock Noctalia alacritty colors.
+[colors.primary]
+background = '{{colors.terminal_background.dark.hex}}'
+foreground = '{{colors.terminal_foreground.dark.hex}}'
+
+[colors.cursor]
+text = '{{colors.terminal_cursor_text.dark.hex}}'
+cursor = '{{colors.terminal_cursor.dark.hex}}'
+
+[colors.vi_mode_cursor]
+text = '{{colors.background.dark.hex}}'
+cursor = '{{colors.primary.dark.hex}}'
+
+[colors.search.matches]
+foreground = '{{colors.surface_variant.dark.hex}}'
+background = '{{colors.tertiary.dark.hex}}'
+
+[colors.search.focused_match]
+foreground = '{{colors.surface_variant.dark.hex}}'
+background = '{{colors.primary.dark.hex}}'
+
+[colors.footer_bar]
+foreground = '{{colors.surface_variant.dark.hex}}'
+background = '{{colors.inverse_surface.dark.hex}}'
+
+[colors.hints.start]
+foreground = '{{colors.surface_variant.dark.hex}}'
+background = '{{colors.secondary.dark.hex}}'
+
+[colors.hints.end]
+foreground = '{{colors.surface_variant.dark.hex}}'
+background = '{{colors.secondary.dark.hex}}'
+
+[colors.selection]
+text = '{{colors.terminal_selection_fg.dark.hex}}'
+background = '{{colors.terminal_selection_bg.dark.hex}}'
+
+
+[colors.normal]
+black   = '{{colors.terminal_normal_black.dark.hex}}'
+red     = '{{colors.terminal_normal_red.dark.hex}}'
+green   = '{{colors.terminal_normal_green.dark.hex}}'
+yellow  = '{{colors.terminal_normal_yellow.dark.hex}}'
+blue    = '{{colors.terminal_normal_blue.dark.hex}}'
+magenta = '{{colors.terminal_normal_magenta.dark.hex}}'
+cyan    = '{{colors.terminal_normal_cyan.dark.hex}}'
+white   = '{{colors.terminal_normal_white.dark.hex}}'
+
+
+[colors.bright]
+black   = '{{colors.terminal_bright_black.dark.hex}}'
+red     = '{{colors.terminal_bright_red.dark.hex}}'
+green   = '{{colors.terminal_bright_green.dark.hex}}'
+yellow  = '{{colors.terminal_bright_yellow.dark.hex}}'
+blue    = '{{colors.terminal_bright_blue.dark.hex}}'
+magenta = '{{colors.terminal_bright_magenta.dark.hex}}'
+cyan    = '{{colors.terminal_bright_cyan.dark.hex}}'
+white   = '{{colors.terminal_bright_white.dark.hex}}'
+
+
+[colors.dim]
+black   = '{{colors.terminal_normal_black.dark.hex}}'
+red     = '{{colors.terminal_normal_red.dark.hex}}'
+green   = '{{colors.terminal_normal_green.dark.hex}}'
+yellow  = '{{colors.terminal_normal_yellow.dark.hex}}'
+blue    = '{{colors.terminal_normal_blue.dark.hex}}'
+magenta = '{{colors.terminal_normal_magenta.dark.hex}}'
+cyan    = '{{colors.terminal_normal_cyan.dark.hex}}'
+white   = '{{colors.terminal_normal_white.dark.hex}}'

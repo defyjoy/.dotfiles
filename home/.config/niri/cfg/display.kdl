@@ -1,0 +1,11 @@
+// ────────────── Output Configuration ──────────────
+// You can run `niri msg outputs` to get the correct name for your displays.
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+
+// Samsung Odyssey G9 (LS49AG95) — 49" super-ultrawide, DQHD
+output "DP-1" {
+    mode "5120x1440@119.999" // Native resolution at 120 Hz
+    scale 1                  // ~109 PPI, no scaling needed
+    transform "normal"
+    position x=0 y=0
+}

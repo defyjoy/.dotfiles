@@ -1,0 +1,29 @@
+    layout {
+        gaps 8 // Gap between windows
+        center-focused-column "never" // Don’t auto-center focused column
+
+        background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+
+        preset-column-widths {
+            proportion 0.25
+            proportion 0.33333
+            proportion 0.5
+            proportion 0.66667
+        }
+
+        // New windows open as a quarter-width column (one cell of a 4x2 grid).
+        default-column-width { proportion 0.25; }
+
+        struts {}
+
+        // Soft drop shadow under every window. Focus-ring/tab colors come from
+        // cfg/colors.kdl, which Noctalia regenerates from the wallpaper palette.
+        shadow {
+            on
+            softness 28
+            spread 2
+            offset x=0 y=6
+            color "#00000070"
+            inactive-color "#00000050"
+        }
+    }

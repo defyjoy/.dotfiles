@@ -1,0 +1,80 @@
+config_version = 15
+
+[location]
+custom_schedule = true
+sunrise = "08:00"
+sunset = "17:00"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 2560.0
+    cy = 1197.3333740234375
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 5120.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[theme]
+builtin = "Ayu"
+community_palette = "Seoul256"
+mode = "auto"
+source = "wallpaper"
+wallpaper_scheme = "m3-fruit-salad"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "qt", "btop", "starship" ]
+    community_ids = []
+    enable_community_templates = true
+
+[wallpaper]
+directory = "/home/defyjoy/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/defyjoy/Pictures/Wallpapers/aishot-1684.jpg"
+
+    [wallpaper.last]
+    path = "/home/defyjoy/Pictures/Wallpapers/aishot-1684.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/defyjoy/Pictures/Wallpapers/aishot-1684.jpg"
+
+    [[wallpaper.favorite]]
+    builtin_palette = "Ayu"
+    palette_source = "builtin"
+    path = "/home/defyjoy/Pictures/Wallpapers/noctalia-wallpaper.png"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/defyjoy/Pictures/Wallpapers/aishot-5223.jpg"
+    theme_mode = "auto"
+    wallpaper_scheme = "m3-fruit-salad"
