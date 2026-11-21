@@ -108,6 +108,7 @@ lib32-opencl-nvidia
 lib32-vulkan-icd-loader
 lib32-vulkan-radeon
 libdvdcss
+libfido2
 libgsf
 libopenraw
 libva-nvidia-driver
@@ -171,6 +172,7 @@ pv
 python
 python-defusedxml
 python-packaging
+python-wand
 qemu-base
 realtime-privileges
 rebuild-detector

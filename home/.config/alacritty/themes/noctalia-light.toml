@@ -1,70 +1,70 @@
 # Light mode, dimmed: background ~L69 (surface_dim darkened+desaturated) instead of ~L98.
 # Text colors darkened (15 or 20) to stay readable on it. Raise/lower the darken values together.
 [colors.primary]
-background = '#c79a91'
-foreground = '#271815'
+background = '#a4a9ae'
+foreground = '#151c24'
 
 [colors.cursor]
-text = '#fff8f6'
-cursor = '#271815'
+text = '#f7f9ff'
+cursor = '#151c24'
 
 [colors.vi_mode_cursor]
-text = '#fff8f6'
-cursor = '#8f437d'
+text = '#f7f9ff'
+cursor = '#00696b'
 
 [colors.search.matches]
-foreground = '#ffdad3'
-background = '#904b3c'
+foreground = '#d5e4f7'
+background = '#2f628c'
 
 [colors.search.focused_match]
-foreground = '#ffdad3'
-background = '#8f437d'
+foreground = '#d5e4f7'
+background = '#00696b'
 
 [colors.footer_bar]
-foreground = '#ffdad3'
-background = '#3d2c29'
+foreground = '#d5e4f7'
+background = '#2a3139'
 
 [colors.hints.start]
-foreground = '#ffdad3'
-background = '#834c74'
+foreground = '#d5e4f7'
+background = '#00696b'
 
 [colors.hints.end]
-foreground = '#ffdad3'
-background = '#834c74'
+foreground = '#d5e4f7'
+background = '#00696b'
 
 [colors.selection]
-text = '#2e1f1c'
-background = '#ffdad3'
+text = '#1b2229'
+background = '#d5e4f7'
 
 
 [colors.normal]
-black   = '#ffdad3'
+black   = '#d5e4f7'
 red     = '#771111'
-green   = '#5b2b4f'
-yellow  = '#533049'
-blue    = '#5a2f26'
-magenta = '#623656'
-cyan    = '#5d3952'
-white   = '#271815'
+green   = '#001e1f'
+yellow  = '#09303a'
+blue    = '#1c3a53'
+magenta = '#001c1c'
+cyan    = '#173b46'
+white   = '#3a4857'
 
 
 [colors.bright]
-black   = '#56423d'
-red     = '#771111'
-green   = '#5b2b4f'
-yellow  = '#533049'
-blue    = '#5a2f26'
-magenta = '#623656'
-cyan    = '#5d3952'
-white   = '#271815'
+black   = '#3e464f'
+red     = '#590006'
+green   = '#000e0f'
+yellow  = '#00191f'
+blue    = '#002338'
+magenta = '#000b0b'
+cyan    = '#001a20'
+white   = '#151c24'
 
 
 [colors.dim]
-black   = '#ffdad3'
+black   = '#d5e4f7'
 red     = '#771111'
-green   = '#5b2b4f'
-yellow  = '#533049'
-blue    = '#5a2f26'
-magenta = '#623656'
-cyan    = '#5d3952'
-white   = '#271815'
+green   = '#001e1f'
+yellow  = '#09303a'
+blue    = '#1c3a53'
+magenta = '#001c1c'
+cyan    = '#173b46'
+white   = '#3a4857'

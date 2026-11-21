@@ -1,69 +1,69 @@
 # Dark mode: stock Noctalia alacritty colors.
 [colors.primary]
-background = '#1e100d'
-foreground = '#f9dcd6'
+background = '#0d141b'
+foreground = '#dce3ee'
 
 [colors.cursor]
-text = '#1e100d'
-cursor = '#f9dcd6'
+text = '#0d141b'
+cursor = '#dce3ee'
 
 [colors.vi_mode_cursor]
-text = '#1e100d'
-cursor = '#ffade6'
+text = '#0d141b'
+cursor = '#4cdadc'
 
 [colors.search.matches]
-foreground = '#5d3f39'
-background = '#ffb4a4'
+foreground = '#3a4857'
+background = '#9bcbfb'
 
 [colors.search.focused_match]
-foreground = '#5d3f39'
-background = '#ffade6'
+foreground = '#3a4857'
+background = '#4cdadc'
 
 [colors.footer_bar]
-foreground = '#5d3f39'
-background = '#f9dcd6'
+foreground = '#3a4857'
+background = '#dce3ee'
 
 [colors.hints.start]
-foreground = '#5d3f39'
-background = '#f6b2e0'
+foreground = '#3a4857'
+background = '#80d4d5'
 
 [colors.hints.end]
-foreground = '#5d3f39'
-background = '#f6b2e0'
+foreground = '#3a4857'
+background = '#80d4d5'
 
 [colors.selection]
-text = '#e7bdb4'
-background = '#5d3f39'
+text = '#b9c8da'
+background = '#3a4857'
 
 
 [colors.normal]
-black   = '#5d3f39'
+black   = '#3a4857'
 red     = '#ffb4ab'
-green   = '#ffade6'
-yellow  = '#f6b2e0'
-blue    = '#ffb4a4'
-magenta = '#ffade6'
-cyan    = '#f6b2e0'
-white   = '#f9dcd6'
+green   = '#4cdadc'
+yellow  = '#87d1ea'
+blue    = '#9bcbfb'
+magenta = '#61dbb8'
+cyan    = '#9cd49f'
+white   = '#b9c8da'
 
 
 [colors.bright]
-black   = '#ae8880'
-red     = '#ffb4ab'
-green   = '#ffade6'
-yellow  = '#f6b2e0'
-blue    = '#ffb4a4'
-magenta = '#ffade6'
-cyan    = '#f6b2e0'
-white   = '#f9dcd6'
+black   = '#8392a3'
+red     = '#ffcbc5'
+green   = '#00eff2'
+yellow  = '#8fe3ff'
+blue    = '#b9dbff'
+magenta = '#00f3c4'
+cyan    = '#97ea9f'
+white   = '#dce3ee'
 
 
 [colors.dim]
-black   = '#5d3f39'
+black   = '#3a4857'
 red     = '#ffb4ab'
-green   = '#ffade6'
-yellow  = '#f6b2e0'
-blue    = '#ffb4a4'
-magenta = '#ffade6'
-cyan    = '#f6b2e0'
-white   = '#f9dcd6'
+green   = '#4cdadc'
+yellow  = '#87d1ea'
+blue    = '#9bcbfb'
+magenta = '#61dbb8'
+cyan    = '#9cd49f'
+white   = '#b9c8da'

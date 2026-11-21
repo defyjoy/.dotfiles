@@ -2,25 +2,25 @@
 layout {
     focus-ring {
         width 2
-        active-gradient from="#ffade6" to="#ffb4a4" angle=135 relative-to="workspace-view"
-        inactive-color "#1e100d00"
-        urgent-color "#ffb4ab"
+        active-gradient from="#00696b" to="#2f628c" angle=135 relative-to="workspace-view"
+        inactive-color "#f7f9ff00"
+        urgent-color "#ba1a1a"
     }
 
     tab-indicator {
-        active-color "#ffade6"
-        inactive-color "#732b64"
-        urgent-color "#ffb4ab"
+        active-color "#00696b"
+        inactive-color "#6ff6f8"
+        urgent-color "#ba1a1a"
     }
 
     insert-hint {
-        color "#ffade680"
+        color "#00696b80"
     }
 }
 
 recent-windows {
     highlight {
-        active-color "#ffade6"
-        urgent-color "#ffb4ab"
+        active-color "#00696b"
+        urgent-color "#ba1a1a"
     }
 }

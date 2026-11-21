@@ -19,6 +19,12 @@ fi
 echo ":: home files (existing files are backed up to ~/.dotfiles-backup)"
 BK="$HOME/.dotfiles-backup/$(date +%F-%H%M%S)"
 rsync -a --backup --backup-dir="$BK" home/ "$HOME/"
+# gpg and ssh refuse configs in world-readable dirs
+chmod 700 "$HOME/.gnupg" "$HOME/.ssh"; chmod 600 "$HOME/.gnupg/gpg-agent.conf" "$HOME/.ssh/config"
+gpgconf --kill gpg-agent 2>/dev/null || true   # pick up enable-ssh-support
+
+echo ":: login shell"
+[[ $(getent passwd "$USER" | cut -d: -f7) == */fish ]] || chsh -s /usr/bin/fish
 
 echo ":: browsers (profile must exist: launch the browser once first)"
 for b in firefox:"$HOME/.config/mozilla/firefox" zen:"$HOME/.config/zen"; do
@@ -40,6 +46,8 @@ if ((SYSTEM)); then
     sudo install -Dm644 "system$f" "$f"
   done
   sudo systemctl enable --now systemd-resolved snapper-timeline.timer snapper-cleanup.timer
+  # login screen: cosmic-greeter (lists the niri session from /usr/share/wayland-sessions)
+  systemctl is-enabled display-manager.service >/dev/null 2>&1 || sudo systemctl enable cosmic-greeter.service
   grep -q '^SNAPPER_CONFIGS=.*home' /etc/conf.d/snapper 2>/dev/null \
     || echo "   NOTE: add 'home' to SNAPPER_CONFIGS in /etc/conf.d/snapper (and create /home/.snapshots)"
   echo "   rebuild initramfs for the NVIDIA option: sudo limine-mkinitcpio"

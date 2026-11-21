@@ -1,4 +1,12 @@
-config_version = 15
+config_version = 20
+
+[accessibility]
+ui_scale = 0.90000000596046448
+
+[dock]
+cross_axis_padding = 0
+icon_size = 24
+main_axis_padding = 3
 
 [location]
 custom_schedule = true
@@ -27,7 +35,7 @@ widget_order = [ "lockscreen-login-box@DP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -43,10 +51,20 @@ widget_order = [ "lockscreen-login-box@DP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[shell]
+corner_radius_scale = 0.70000001043081284
+
+    [shell.launcher]
+    app_grid = true
+
+    [shell.panel]
+    launcher_placement = "attached"
+
 [theme]
 builtin = "Ayu"
 community_palette = "Seoul256"
 mode = "auto"
+shell_mode = "auto"
 source = "wallpaper"
 wallpaper_scheme = "m3-fruit-salad"
 
@@ -57,15 +75,19 @@ wallpaper_scheme = "m3-fruit-salad"
 
 [wallpaper]
 directory = "/home/defyjoy/Pictures/Wallpapers"
+fill_mode = "fit"
+
+    [wallpaper.automation]
+    enabled = true
 
     [wallpaper.default]
-    path = "/home/defyjoy/Pictures/Wallpapers/aishot-1684.jpg"
+    path = "/home/defyjoy/Pictures/Wallpapers/uwshot-1341.jpg"
 
     [wallpaper.last]
-    path = "/home/defyjoy/Pictures/Wallpapers/aishot-1684.jpg"
+    path = "/home/defyjoy/Pictures/Wallpapers/uwshot-1341.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/defyjoy/Pictures/Wallpapers/aishot-1684.jpg"
+    path = "/home/defyjoy/Pictures/Wallpapers/uwshot-1341.jpg"
 
     [[wallpaper.favorite]]
     builtin_palette = "Ayu"

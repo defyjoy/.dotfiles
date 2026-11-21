@@ -25,3 +25,13 @@
 .config/pywalfox/config.json
 .config/mimeapps.list
 .icons/default/index.theme
+.config/fish/conf.d/
+.config/environment.d/
+.config/user-dirs.dirs
+.zshrc
+# Noctalia acts as the Pywalfox native host (path=/usr/bin/noctalia); Firefox reads either location
+.config/mozilla/native-messaging-hosts/pywalfox.json
+.mozilla/native-messaging-hosts/pywalfox.json
+# YubiKey: gpg-agent as ssh-agent + GitHub host entry. Config only, never keys.
+.gnupg/gpg-agent.conf
+.ssh/config
